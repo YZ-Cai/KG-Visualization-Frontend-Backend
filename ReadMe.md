@@ -252,7 +252,7 @@ option = {
 
 绘图效果如下：
 
-![截图](0cab1c3162ab03e08a3d8638cf2e7840.png)
+![截图](ReadMe/0cab1c3162ab03e08a3d8638cf2e7840.png)
 
 更多关于Vue+Echarts前端绘图的用法，可参考：[https://www.jianshu.com/p/cf0a54374419](https://www.jianshu.com/p/cf0a54374419)
 
@@ -297,12 +297,12 @@ if __name__ == '__main__':
 
 - getData()
   
-  ![截图](2854117a91681d9ce24ab7126f39ec0e.png)
+  ![截图](ReadMe/2854117a91681d9ce24ab7126f39ec0e.png)
 - returnResult()
   
-  ![截图](78c83cb66a7bfe04796e025ab0757547.png)
+  ![截图](ReadMe/78c83cb66a7bfe04796e025ab0757547.png)
   
-  ![截图](8521b4ad319217830f0241fb75dba062.png)
+  ![截图](ReadMe/8521b4ad319217830f0241fb75dba062.png)
 
 更多关于Flask的用法，可参考:
 
@@ -408,7 +408,7 @@ if __name__ == '__main__':
 
 当前代码中共有两个方法（methods），getData()方法中还需要完成Post请求的发送，而drawGraph()方法则是第2节中已完成的代码，只是将数据来源更改为全局变量this.nodes与this.edges。运行代码，浏览器中绘图结果如下：
 
-![截图](9b9736a16f6f68aeb9a8443ac7c3e883.png)
+![截图](ReadMe/9b9736a16f6f68aeb9a8443ac7c3e883.png)
 
 接下来，在getData()方法中，使用axios包发送Post请求获取图数据。
 
@@ -473,7 +473,7 @@ getData() {
 
 最后启动本地网页预览：`npm run serve`，浏览器中效果如下：
 
-![截图](9eb9bcb57481857076540c363bae6604.png)
+![截图](ReadMe/9eb9bcb57481857076540c363bae6604.png)
 
 ### 3.3 前端向Python后端返回结果
 
@@ -618,11 +618,11 @@ if __name__ == '__main__':
 
 分别开启前端与后端服务后，前端可以加载出图，并向后端返回'This is a result'字符串：
 
-![截图](fb79e14653c416a4ace268331d988c22.png)
+![截图](ReadMe/fb79e14653c416a4ace268331d988c22.png)
 
 后端Python接收到了返回值，并打印于控制台中：
 
-![截图](f2ef8c708b4b2f241cecace9bdc5a412.png)
+![截图](ReadMe/f2ef8c708b4b2f241cecace9bdc5a412.png)
 
 更多关于前端axios请求的方法，可以参考Axios开发文档：[http://www.axios-js.com/zh-cn/docs/#axios-put-url-data-config-1](http://www.axios-js.com/zh-cn/docs/#axios-put-url-data-config-1)
 
@@ -957,7 +957,7 @@ if __name__ == '__main__':
 
 值得注意的是，由于按钮的值可能会有变化，因此需要加入最后的watch监听功能，根据按钮数组（options）的实时取值显示。运行后浏览器显示效果如下：
 
-![截图](34d15907b817380fa84d2b46a0d4ecd8.png)
+![截图](ReadMe/34d15907b817380fa84d2b46a0d4ecd8.png)
 
 <br/>
 
@@ -1142,7 +1142,7 @@ if __name__ == '__main__':
 
 刷新网页时，首先会通过getData()函数获取图数据、查询ID以及选项列表等必要数据。当用户选择某个选项后，前端会将选项文本通过returnResult函数返回至Python后端，待Python后端确认请求成功后再次调用getData()函数获取下一个图、ID及选项等，往复循环。轮流点击三个选项，后端Python控制台日志如下：
 
-![截图](170d1992846d0ce5a84299c3c5dedb74.png)
+![截图](ReadMe/170d1992846d0ce5a84299c3c5dedb74.png)
 
 <br/>
 
@@ -1353,16 +1353,16 @@ if __name__ == '__main__':
 
 运行或刷新前端页面后，首先显示的是用户ID输入框：
 
-![截图](c3b51b1c67cfa80dcc661d802f39ad2d.png)
+![截图](ReadMe/c3b51b1c67cfa80dcc661d802f39ad2d.png)
 
 输入ID并点击确定按钮后，调用getData()方法获取数据并显示：
 
-![截图](71edefcf4d8a6c4473d9ed2c8e6bfe3e.png)
+![截图](ReadMe/71edefcf4d8a6c4473d9ed2c8e6bfe3e.png)
 
 此时Python后端获取到了用户的ID信息：
 
-![截图](1f8d30840f7bfb6fe550c62e91cdb234.png)
+![截图](ReadMe/1f8d30840f7bfb6fe550c62e91cdb234.png)
 
 选择某个选项后，前端网页传回选项并请求加载新的数据，此时后端也获取了上个查询的结果以及其他必要信息：
 
-![截图](d31140864625446579df3d5a9326f616.png)
+![截图](ReadMe/d31140864625446579df3d5a9326f616.png)
